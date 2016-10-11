@@ -112,8 +112,7 @@ public class MyWindow extends JFrame {
     public void connect() {
         if (sock == null) {
             try {
-                //sock = new Socket("83.221.205.67", 8189);
-                sock = new Socket("127.0.0.1", 8189);
+                sock = new Socket("83.221.205.67", 8189);
                 in = new DataInputStream(sock.getInputStream());
                 out = new DataOutputStream(sock.getOutputStream());
             } catch (IOException e) {
